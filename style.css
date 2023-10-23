@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  }
+  
+  :root {
+    font-size: 62.5%; /* 10px */
+    --hue: 194;
+    --text-color: hsl(var(--hue), 7%, 78%);
+    --primary-color: hsl(var(--hue), 9%, 89%);
+    --button-secondary: hsl(var(--hue), 97%, 31%);
+    --button-bg-color: hsl(var(--hue), 40%, 98%);
+    --bg-color: hsl(var(--hue), 0%, 100%);
+  }
+  
+  HTML, body, main, select, :root, .page, input, button {
+    font-family: 'Roboto', sans-serif;
+    
+  } 
+
+  nav {
+    display: flex;
+    align-items: center;
+    margin: 4rem 7.2rem;
+    gap: 3.2rem
+
+  }
+
+  nav a {
+    text-decoration: none;
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+    font-weight: 400;
+    color: var(--text-color);
+  }
+  
+  nav a.active {
+    font-weight: bold;
+    color: var(--bg-color);
+    font-size: 2.4rem;
+  }
+  
+
+  .home-content {
+    display: grid;
+    height: 100vh;
+    place-content: center;
+    
+  }
+
+  .home-content img,
+  .universe-content img,
+  .exploration-content img {
+    
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+  
+}
+
+
+.home-content h1 {
+  font-size: 4.8rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  line-height: 125%;
+}
+
+ .home-content button {
+    margin-left: 10.4rem;
+    margin-top: 2.4rem;
+    width: 20rem;
+    height: 4.8rem;
+    border-radius: .5rem;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    background-color: transparent;
+    font-weight: bold;
+    margin-bottom: 10rem;
+    color:  var(--bg-color);
+    border-color: var(--bg-color);
+  }
+
+  .home-content button:hover {
+    color: var(--button-secondary);
+  
+    background-color: var(--bg-color);
+  }
+
+  .universe-content h1,
+  .exploration-content h1 {
+  margin-top: 10.3rem;
+  margin-left: 10rem;  
+  font-size: 4.8rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  
+}
+  
+  .universe-content p,
+  .exploration-content p {
+    margin-left: 10rem;
+    width: 60rem;
+    margin-top: 1.6rem;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    color: var(--primary-color);
+  }
+
+  
+
+
+ 
+  
+  
